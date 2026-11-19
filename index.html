@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/originals/02/8f/c0/028fc0f58b6d275812336e90c6ba4251.gif");
+            background-size: cover;
+            background-position: center;
+            color: #354b35;
+            font-family: Georgia, serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #25452c;
+            font-size: 35px;
+        }
+
+        p {
+            color: #647653;
+        }
+
+        input {
+            background-color: #f8f5e9;
+            border: 2px solid #879477;
+            border-radius: 8px;
+            padding: 10px;
+            font-family: Georgia, serif;
+        }
+
+        button {
+            background-color: #496447;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-family: Georgia, serif;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #304b32;
+        }
+
+        #results {
+            background-color: #f5f1e3;
+            border: 2px solid #9a9b78;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 400px;
+            line-height: 2;
+        }
+
+        h3 {
+            color: #526b43;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌿 Student Club Members 🌿</h1>
+    <p>Welcome!</p>
+
+    First Name: <input type="text" id="first_name">
+    <br><br>
+    Last Name: <input type="text" id="last_name">
+    <br><br>
+    <button py-click="add_member">Add Member</button>
+    <div id="results"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
